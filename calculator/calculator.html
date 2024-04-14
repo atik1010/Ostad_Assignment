@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Calculator</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <h2>Arithmetic Calculator</h2>
+    <div class="calculator">
+        <div class="input-group">
+            <label for="firstNumber">First Number:</label>
+            <input type="text" id="firstNumber" placeholder="Enter first number">
+        </div>
+        <div class="input-group">
+            <label for="operation">Operations:</label>
+            <select id="operation">
+                <option value="">Select an Operator</option>
+                <option value="add">Addition (+)</option>
+                <option value="subtract">Subtraction (-)</option>
+                <option value="multiply">Multiplication (*)</option>
+                <option value="divide">Division (/)</option>
+            </select>
+        </div>
+        <div class="input-group">
+            <label for="secondNumber">Second Number:</label>
+            <input type="text" id="secondNumber" placeholder="Enter second number">
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <div id="result"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
